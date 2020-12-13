@@ -3,7 +3,7 @@ import '../styles/globals.css'
 // Chakra-UI Wrapper => ChakraProvider
 import { ChakraProvider } from "@chakra-ui/react"
 // Import Chakra customizations as customTheme
-import customTheme from `../theme/theme.js`
+import customTheme from '../theme/theme.js'
 
 
 function MyApp({ Component, pageProps }) {
