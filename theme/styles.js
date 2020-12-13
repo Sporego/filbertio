@@ -4,16 +4,16 @@ const styles = {
           global: {
             // styles for the `body`
             body: {
-              bg: "gray.400",
-              color: "white",
+              bg: "white",
+              color: "black",
             },
             // styles for the `a`
-            a: {
-              color: "teal.500",
-              _hover: {
-                textDecoration: "underline",
-              },
-            },
+            // a: {
+            //   color: "teal.500",
+            //   _hover: {
+            //     textDecoration: "underline",
+            //   },
+            // },
           },
         },
       
