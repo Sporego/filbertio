@@ -1,10 +1,13 @@
-import Head from 'next/head'
-import { Box } from "@chakra-ui/react"
+import Head from 'next/head';
+import { Box } from '@chakra-ui/react';
 
 export default function Home() {
-  return (
-    <Head>
-    
-    </Head>
-  )
+	return (
+		<div>
+			<Head>
+				<title>Filbert Shi</title>
+			</Head>
+			<section></section>
+		</div>
+	);
 }

@@ -1,14 +1,15 @@
 // Chakra-UI
-import { ChakraProvider } from "@chakra-ui/react"
-import customTheme from '../theme/theme.js'
+import { ChakraProvider } from '@chakra-ui/react';
+import customTheme from '../theme/theme';
 // TSX Support
-import type { AppProps /*, AppContext */ } from 'next/app'
+import type { AppProps /*, AppContext */ } from 'next/app';
 
 function MyApp({ Component, pageProps }: AppProps) {
-  return (
-  <ChakraProvider theme={customTheme}>
-  <Component {...pageProps} />
-  </ChakraProvider>)
+	return (
+		<ChakraProvider theme={customTheme}>
+			<Component {...pageProps} />
+		</ChakraProvider>
+	);
 }
 
-export default MyApp
+export default MyApp;
