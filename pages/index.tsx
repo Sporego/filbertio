@@ -7,7 +7,7 @@ export default function Home() {
 			<Head>
 				<title>Filbert Shi</title>
 			</Head>
-			<section></section>
+			<Box></Box>
 		</div>
 	);
 }
