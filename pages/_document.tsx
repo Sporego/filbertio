@@ -6,6 +6,8 @@ import Document, {
 	NextScript,
 } from 'next/document';
 
+import { ColorModeScript } from '@chakra-ui/react';
+
 class MyDocument extends Document {
 	static async getInitialProps(ctx: DocumentContext) {
 		const initialProps = await Document.getInitialProps(ctx);
@@ -17,7 +19,7 @@ class MyDocument extends Document {
 		return (
 			<Html>
 				<Head>
-                    {/* Favicon Block: https://realfavicongenerator.net/ */}
+					{/* Favicon Block: https://realfavicongenerator.net/ */}
 					<link
 						rel='apple-touch-icon'
 						sizes='180x180'
@@ -45,6 +47,9 @@ class MyDocument extends Document {
 					<meta name='theme-color' content='#ffffff' />
 				</Head>
 				<body>
+					<ColorModeScript
+						initialColorMode={theme.config.initialColorMode}
+					/>
 					<Main />
 					<NextScript />
 				</body>
