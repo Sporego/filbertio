@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { Box } from '@chakra-ui/react';
+import Navbar from '../components/Navbar';
 
 export default function Home() {
 	return (
@@ -7,7 +7,7 @@ export default function Home() {
 			<Head>
 				<title>Filbert Shi</title>
 			</Head>
-			<Box></Box>
+			<Navbar />
 		</div>
 	);
 }

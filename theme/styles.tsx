@@ -11,7 +11,7 @@ interface styles {
 
 const styles = {
 	styles: {
-		g2lobal: {
+		global: {
 			body: {
 				bg: 'white',
 				color: 'black',
