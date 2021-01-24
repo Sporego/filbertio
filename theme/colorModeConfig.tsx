@@ -4,7 +4,7 @@ interface colorModeConfig {
 }
 
 const colorModeConfig = {
-	initialColorMode: 'dark',
+	initialColorMode: 'light',
 	useSystemColorMode: false,
 };
 export default colorModeConfig;
