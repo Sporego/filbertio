@@ -11,13 +11,22 @@ import {
 	useColorMode,
 } from '@chakra-ui/react';
 import { FaDev } from 'react-icons/fa';
+import { RiMoonClearLine } from 'react-icons/ri'
+import { FiSun } from 'react-icons/fi'
 
 export default function Navbar() {
 	const { colorMode, toggleColorMode } = useColorMode();
 	const navWidth = useBreakpointValue({
 		base: '100%',
 		lg: '90%',
-	});
+    });
+    
+    function toggleIcon() {
+
+        return
+
+    }
+
 
 	return (
 		<chakra.section>
@@ -31,7 +40,7 @@ export default function Navbar() {
 						</Center>
                         </Flex>
 						<Center>
-							<Button onClick={toggleColorMode}>
+							<Button leftIcon={colorMode === "light" ? <RiMoonClearLine/> : <FiSun/> } onClick={toggleColorMode}>
 								Toggle Theme
 							</Button>
 						</Center>
