@@ -20,17 +20,17 @@ export default function Navbar() {
 
 	return (
 		<chakra.section>
-			<Box height='6em' width='100%' bg='white'>
+			<Box height='6em' width='100%'>
 				<Center>
-					<Flex
-						flexDirection='row'
-						bg='black'
-						height='6em'
-						width={navWidth}
-					>
+					<Flex flexDirection='row' height='6em' width={navWidth}>
 						<Icon boxSize='6em' as={FaDev} />
 						<Center>
 							<Heading>Filbert Shi</Heading>
+						</Center>
+						<Center>
+							<Button onClick={toggleColorMode}>
+								Toggle Theme
+							</Button>
 						</Center>
 					</Flex>
 				</Center>
