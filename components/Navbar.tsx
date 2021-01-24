@@ -5,7 +5,8 @@ import {
 	Center,
 	Flex,
 	Heading,
-	Icon,
+    Icon,
+    Link,
 	useBreakpointValue,
 	useColorMode,
 } from '@chakra-ui/react';
@@ -22,11 +23,13 @@ export default function Navbar() {
 		<chakra.section>
 			<Box height='6em' width='100%'>
 				<Center>
-					<Flex flexDirection='row' height='6em' width={navWidth}>
+					<Flex flexDirection='row' justifyContent="space-between" height='6em' width={navWidth}>
+                        <Flex flexDirection='row' as={Link} href="/">
 						<Icon boxSize='6em' as={FaDev} />
 						<Center>
 							<Heading>Filbert Shi</Heading>
 						</Center>
+                        </Flex>
 						<Center>
 							<Button onClick={toggleColorMode}>
 								Toggle Theme
