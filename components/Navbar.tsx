@@ -21,13 +21,6 @@ export default function Navbar() {
 		lg: '90%',
     });
     
-    function toggleIcon() {
-
-        return
-
-    }
-
-
 	return (
 		<chakra.section>
 			<Box height='6em' width='100%'>
