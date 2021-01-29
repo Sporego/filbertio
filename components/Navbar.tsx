@@ -48,6 +48,7 @@ export default function Navbar() {
 						<Center>
 							<Flex mt={3}>
 								<Button
+									bg='transparent'
 									as={Box}
 									leftIcon={
 										colorMode === 'light' ? (
@@ -61,6 +62,7 @@ export default function Navbar() {
 									Theme
 								</Button>
 								<Button
+									bg='transparent'
 									as={Link}
 									href='/resume'
 									onClick={() => NProgress.start()}
@@ -68,6 +70,7 @@ export default function Navbar() {
 									Résumé
 								</Button>
 								<Button
+									bg='transparent'
 									as={Link}
 									href='/experience'
 									onClick={() => NProgress.start()}
@@ -75,6 +78,7 @@ export default function Navbar() {
 									Experience
 								</Button>
 								<Button
+									bg='transparent'
 									as={Link}
 									href='/blog'
 									onClick={() => NProgress.start()}
