@@ -17,9 +17,7 @@ import { FiSun } from 'react-icons/fi';
 // Loading Bar Imports
 import NProgress from 'nprogress'; //nprogress module
 
-
 export default function Navbar() {
-
 	const { colorMode, toggleColorMode } = useColorMode();
 	const navWidth = useBreakpointValue({
 		base: '100%',
@@ -36,7 +34,12 @@ export default function Navbar() {
 						height='6em'
 						width={navWidth}
 					>
-						<Flex flexDirection='row' as={Link} href='/' onClick={() => NProgress.start()}>
+						<Flex
+							flexDirection='row'
+							as={Link}
+							href='/'
+							onClick={() => NProgress.start()}
+						>
 							<Icon boxSize='6em' as={FaDev} />
 							<Center>
 								<Heading>Filbert Shi</Heading>
@@ -57,11 +60,25 @@ export default function Navbar() {
 								>
 									Theme
 								</Button>
-								<Button as={Link} href='/resume' onClick={() => NProgress.start()}>Resume</Button>
-								<Button as={Link} href='/experience' onClick={() => NProgress.start()}>
+								<Button
+									as={Link}
+									href='/resume'
+									onClick={() => NProgress.start()}
+								>
+									Résumé
+								</Button>
+								<Button
+									as={Link}
+									href='/experience'
+									onClick={() => NProgress.start()}
+								>
 									Experience
 								</Button>
-								<Button as={Link} href='/blog' onClick={() => NProgress.start()}>
+								<Button
+									as={Link}
+									href='/blog'
+									onClick={() => NProgress.start()}
+								>
 									Blog
 								</Button>
 							</Flex>
