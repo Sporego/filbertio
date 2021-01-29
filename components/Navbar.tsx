@@ -57,8 +57,8 @@ export default function Navbar() {
 								>
 									Theme
 								</Button>
-								<Button>Social</Button>
-								<Button as={Link} href='/blog' onClick={() => NProgress.start()}>
+								<Button as={Link} href='/resume' onClick={() => NProgress.start()}>Resume</Button>
+								<Button as={Link} href='/experience' onClick={() => NProgress.start()}>
 									Experience
 								</Button>
 								<Button as={Link} href='/blog' onClick={() => NProgress.start()}>
