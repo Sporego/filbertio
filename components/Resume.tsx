@@ -1,8 +1,8 @@
 export default function Resume() {
 	return (
 		<iframe
-			id='special'
-			src='./lib/pdfjs/viewer.html?file=../../Filbert_Shi_Resume.pdf'
+			id='pdfjs'
+			src='./lib/pdfjs/web/viewer.html?file=../../../public/Filbert_Shi_Resume.pdf'
 			width='100%'
 		></iframe>
 	);

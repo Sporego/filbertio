@@ -3,7 +3,7 @@ import dynamic from 'next/dynamic';
 import Navbar from '../components/Navbar';
 
 export default function Home() {
-	const Resume = dynamic(
+	const PDFJS = dynamic(
 		() => {
 			return import('../components/Resume');
 		},
@@ -15,7 +15,7 @@ export default function Home() {
 				<title>Filbert Shi</title>
 			</Head>
 			<Navbar />
-			<Resume />
+			<PDFJS />
 		</div>
 	);
 }

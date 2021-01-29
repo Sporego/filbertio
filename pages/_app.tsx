@@ -1,3 +1,4 @@
+import '../public/lib/pdfjs/special.css';
 // Chakra-UI
 import { ChakraProvider } from '@chakra-ui/react';
 import customTheme from '../theme/theme';
