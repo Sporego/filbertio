@@ -72,10 +72,10 @@ export default function Navbar() {
 								<Button
 									bg='transparent'
 									as={Link}
-									href='/experience'
+									href='/my_work'
 									onClick={() => NProgress.start()}
 								>
-									Experience
+									My Work
 								</Button>
 								<Button
 									bg='transparent'
