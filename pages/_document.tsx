@@ -50,7 +50,7 @@ class MyDocument extends Document {
 				<body>
 					<ColorModeScript
 						initialColorMode={
-							theme.colorModeConfig.initialColorMode
+							theme.config.initialColorMode
 						}
 					/>
 					<Main />
