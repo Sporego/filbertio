@@ -14,6 +14,9 @@ import { FaDev } from 'react-icons/fa';
 import { RiMoonClearLine } from 'react-icons/ri';
 import { FiSun } from 'react-icons/fi';
 
+// Loading Bar Imports
+import NProgress from 'nprogress'; //nprogress module
+
 export default function Navbar() {
 	const { colorMode, toggleColorMode } = useColorMode();
 	const navWidth = useBreakpointValue({
@@ -35,6 +38,7 @@ export default function Navbar() {
 							flexDirection='row'
 							as={Link}
 							href='/'
+							onClick={() => NProgress.start()}
 						>
 							<Icon boxSize='6em' as={FaDev} />
 							<Center>
@@ -61,6 +65,7 @@ export default function Navbar() {
 									bg='transparent'
 									as={Link}
 									href='/resume'
+									onClick={() => NProgress.start()}
 								>
 									Résumé
 								</Button>
@@ -68,6 +73,7 @@ export default function Navbar() {
 									bg='transparent'
 									as={Link}
 									href='/my_work'
+									onClick={() => NProgress.start()}
 								>
 									My Work
 								</Button>
@@ -75,6 +81,7 @@ export default function Navbar() {
 									bg='transparent'
 									as={Link}
 									href='/blog'
+									onClick={() => NProgress.start()}
 								>
 									Blog
 								</Button>
