@@ -14,9 +14,6 @@ import { FaDev } from 'react-icons/fa';
 import { RiMoonClearLine } from 'react-icons/ri';
 import { FiSun } from 'react-icons/fi';
 
-// Loading Bar Imports
-import NProgress from 'nprogress'; //nprogress module
-
 export default function Navbar() {
 	const { colorMode, toggleColorMode } = useColorMode();
 	const navWidth = useBreakpointValue({
